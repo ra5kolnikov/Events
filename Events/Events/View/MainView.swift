@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = MainViewViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            EventsListView(items: [EventItem(id: "ad", name: "Alen", startTime: Date().timeIntervalSince1970, endTime: Date().timeIntervalSince1970)])
+        } else {
+            LoginView()
         }
-        .padding()
     }
 }
 

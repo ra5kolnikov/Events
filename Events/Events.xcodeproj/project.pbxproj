@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA8097F52A2A154700CF7A18 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8097F42A2A154700CF7A18 /* TODO.swift */; };
 		BAEE11082A29A1150061AAF6 /* EventsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11072A29A1150061AAF6 /* EventsApp.swift */; };
 		BAEE110A2A29A1150061AAF6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11092A29A1150061AAF6 /* MainView.swift */; };
 		BAEE110C2A29A1170061AAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEE110B2A29A1170061AAF6 /* Assets.xcassets */; };
@@ -16,9 +17,23 @@
 		BAEE11202A29A9EB0061AAF6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BAEE111F2A29A9EB0061AAF6 /* FirebaseAuth */; };
 		BAEE11222A29A9EB0061AAF6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BAEE11212A29A9EB0061AAF6 /* FirebaseFirestore */; };
 		BAEE11242A29A9EB0061AAF6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BAEE11232A29A9EB0061AAF6 /* FirebaseFirestoreSwift */; };
+		BAEE11282A29AF780061AAF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11272A29AF780061AAF6 /* LoginView.swift */; };
+		BAEE112A2A29AF830061AAF6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11292A29AF830061AAF6 /* RegisterView.swift */; };
+		BAEE112C2A29AF950061AAF6 /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE112B2A29AF950061AAF6 /* EventsListView.swift */; };
+		BAEE112E2A29AFA50061AAF6 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE112D2A29AFA50061AAF6 /* EventRowView.swift */; };
+		BAEE11302A29AFB70061AAF6 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE112F2A29AFB70061AAF6 /* LoginViewViewModel.swift */; };
+		BAEE11322A29AFC20061AAF6 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11312A29AFC20061AAF6 /* RegisterViewViewModel.swift */; };
+		BAEE11342A29AFD80061AAF6 /* EventsListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11332A29AFD80061AAF6 /* EventsListViewViewModel.swift */; };
+		BAEE11362A29AFE90061AAF6 /* EventRowViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11352A29AFE90061AAF6 /* EventRowViewViewModel.swift */; };
+		BAEE11382A29B0030061AAF6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11372A29B0030061AAF6 /* User.swift */; };
+		BAEE113A2A29B0160061AAF6 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11392A29B0160061AAF6 /* EventItem.swift */; };
+		BAEE113C2A29B0260061AAF6 /* Extencions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE113B2A29B0260061AAF6 /* Extencions.swift */; };
+		BAEE113E2A29B0AA0061AAF6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE113D2A29B0AA0061AAF6 /* HeaderView.swift */; };
+		BAEE11432A29B5890061AAF6 /* ReuseableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11422A29B5890061AAF6 /* ReuseableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA8097F42A2A154700CF7A18 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		BAEE11042A29A1150061AAF6 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEE11072A29A1150061AAF6 /* EventsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsApp.swift; sourceTree = "<group>"; };
 		BAEE11092A29A1150061AAF6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -26,6 +41,19 @@
 		BAEE110E2A29A1170061AAF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAEE11192A29A1FF0061AAF6 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		BAEE111B2A29A3EE0061AAF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAEE11272A29AF780061AAF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BAEE11292A29AF830061AAF6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BAEE112B2A29AF950061AAF6 /* EventsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		BAEE112D2A29AFA50061AAF6 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		BAEE112F2A29AFB70061AAF6 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		BAEE11312A29AFC20061AAF6 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		BAEE11332A29AFD80061AAF6 /* EventsListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewViewModel.swift; sourceTree = "<group>"; };
+		BAEE11352A29AFE90061AAF6 /* EventRowViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowViewViewModel.swift; sourceTree = "<group>"; };
+		BAEE11372A29B0030061AAF6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAEE11392A29B0160061AAF6 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
+		BAEE113B2A29B0260061AAF6 /* Extencions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extencions.swift; sourceTree = "<group>"; };
+		BAEE113D2A29B0AA0061AAF6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BAEE11422A29B5890061AAF6 /* ReuseableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +94,7 @@
 				BAEE11162A29A14E0061AAF6 /* ViewModel */,
 				BAEE11172A29A1550061AAF6 /* View */,
 				BAEE110D2A29A1170061AAF6 /* Preview Content */,
+				BA8097F42A2A154700CF7A18 /* TODO.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -81,6 +110,8 @@
 		BAEE11152A29A1470061AAF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BAEE11372A29B0030061AAF6 /* User.swift */,
+				BAEE11392A29B0160061AAF6 /* EventItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				BAEE11192A29A1FF0061AAF6 /* MainViewViewModel.swift */,
+				BAEE112F2A29AFB70061AAF6 /* LoginViewViewModel.swift */,
+				BAEE11312A29AFC20061AAF6 /* RegisterViewViewModel.swift */,
+				BAEE11332A29AFD80061AAF6 /* EventsListViewViewModel.swift */,
+				BAEE11352A29AFE90061AAF6 /* EventRowViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -97,6 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				BAEE11092A29A1150061AAF6 /* MainView.swift */,
+				BAEE11272A29AF780061AAF6 /* LoginView.swift */,
+				BAEE11292A29AF830061AAF6 /* RegisterView.swift */,
+				BAEE112B2A29AF950061AAF6 /* EventsListView.swift */,
+				BAEE112D2A29AFA50061AAF6 /* EventRowView.swift */,
+				BAEE113D2A29B0AA0061AAF6 /* HeaderView.swift */,
+				BAEE11422A29B5890061AAF6 /* ReuseableButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +148,7 @@
 				BAEE111B2A29A3EE0061AAF6 /* GoogleService-Info.plist */,
 				BAEE110B2A29A1170061AAF6 /* Assets.xcassets */,
 				BAEE11072A29A1150061AAF6 /* EventsApp.swift */,
+				BAEE113B2A29B0260061AAF6 /* Extencions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -191,8 +233,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEE110A2A29A1150061AAF6 /* MainView.swift in Sources */,
+				BAEE112E2A29AFA50061AAF6 /* EventRowView.swift in Sources */,
+				BAEE112A2A29AF830061AAF6 /* RegisterView.swift in Sources */,
+				BAEE11302A29AFB70061AAF6 /* LoginViewViewModel.swift in Sources */,
+				BAEE11432A29B5890061AAF6 /* ReuseableButton.swift in Sources */,
+				BAEE112C2A29AF950061AAF6 /* EventsListView.swift in Sources */,
+				BAEE113A2A29B0160061AAF6 /* EventItem.swift in Sources */,
 				BAEE11082A29A1150061AAF6 /* EventsApp.swift in Sources */,
+				BAEE113C2A29B0260061AAF6 /* Extencions.swift in Sources */,
+				BAEE11282A29AF780061AAF6 /* LoginView.swift in Sources */,
 				BAEE111A2A29A2000061AAF6 /* MainViewViewModel.swift in Sources */,
+				BAEE113E2A29B0AA0061AAF6 /* HeaderView.swift in Sources */,
+				BAEE11382A29B0030061AAF6 /* User.swift in Sources */,
+				BAEE11362A29AFE90061AAF6 /* EventRowViewViewModel.swift in Sources */,
+				BAEE11322A29AFC20061AAF6 /* RegisterViewViewModel.swift in Sources */,
+				BA8097F52A2A154700CF7A18 /* TODO.swift in Sources */,
+				BAEE11342A29AFD80061AAF6 /* EventsListViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,8 +49,10 @@ struct LoginView: View {
                         .padding(.bottom, 10)
                         .frame(height: 60)
                     }
-                    .frame(width: UIScreen.main.bounds.width)
+                    .padding(.bottom, 60)
+                    .frame(width: UIScreen.main.bounds.width, height: 270)
                     .scrollContentBackground(.hidden)
+                    .offset(y: -70)
                     VStack {
                         Text("New around here?")
                         NavigationLink("Create an Account",
@@ -60,6 +62,7 @@ struct LoginView: View {
                         .padding(.bottom, 50)
                     }
                 }
+                .ignoresSafeArea(.keyboard, edges: .bottom)
             }
         }
     }

@@ -10,64 +10,44 @@ import SwiftUI
 struct EventsListView: View {
     
     @StateObject var viewModel = EventsListViewViewModel()
-    var items: [EventItem]
     
     var body: some View {
-        VStack {
-            List(items) { item in
-                EventRowView(item: item)
+        NavigationView {
+            VStack {
+                List(viewModel.posts) { post in
+                    NavigationLink(destination: DetailView(url: post.url)) {
+                        EventRowView(item: post)
+                    }
+                }
+                ReuseableButton(title: "Say Hello :)",
+                                color: .green) {
+                    viewModel.showAlert = true
+                }
+                                .frame(width: UIScreen.main.bounds.width - 10 ,height: 50)
+                                .padding(.bottom, 10)
+                
+                ReuseableButton(title: "Log Out",
+                                color: .red) {
+                    viewModel.logOut()
+                }
+                                .frame(width: UIScreen.main.bounds.width - 10 ,height: 50)
+                                .padding(.bottom, 10)
             }
-            ReuseableButton(title: "Say Hello :)",
-                            color: .yellow) {
-                viewModel.showAlert = true
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert(title: Text("Hello \(viewModel.userName)"),
+                      message: Text("Welcome to Events book my friend :)."))
             }
-            .frame(width: UIScreen.main.bounds.width - 10 ,height: 50)
-            .padding(.bottom, 10)
-            
-            ReuseableButton(title: "Log Out",
-                            color: .red) {
-                viewModel.logOut()
+            .onAppear {
+                viewModel.fetchData()
+                viewModel.fetchUser()
             }
-            .frame(width: UIScreen.main.bounds.width - 10 ,height: 50)
-            .padding(.bottom, 10)
-        }
-        .alert(isPresented: $viewModel.showAlert) {
-            Alert(title: Text("Hello \(viewModel.userName)"),
-                  message: Text("Welcome to Events book my friend :)."))
-        }
-        .onAppear {
-            viewModel.fetchUser()
+            .navigationTitle("Your Events")
         }
     }
 }
 
 struct EventsListView_Previews: PreviewProvider {
     static var previews: some View {
-        EventsListView(items: [
-            EventItem(id: "123",
-                      name: "Coffee",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970),
-            EventItem(id: "231",
-                      name: "Sleep",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970),
-            EventItem(id: "123",
-                      name: "Coffee",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970),
-            EventItem(id: "231",
-                      name: "Sleep",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970),
-            EventItem(id: "123",
-                      name: "Coffee",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970),
-            EventItem(id: "231",
-                      name: "Sleep",
-                      startTime: Date().timeIntervalSince1970,
-                      endTime: Date().timeIntervalSince1970)
-        ])
+        EventsListView()
     }
 }

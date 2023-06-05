@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BA8097F52A2A154700CF7A18 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8097F42A2A154700CF7A18 /* TODO.swift */; };
+		BAA6C0DE2A2DE6DD009425FD /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C0DD2A2DE6DD009425FD /* DateFormatter.swift */; };
+		BAA6C0E02A2DE972009425FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C0DF2A2DE972009425FD /* DetailView.swift */; };
+		BAA6C0E42A2DEA84009425FD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C0E32A2DEA84009425FD /* WebView.swift */; };
+		BAA6C0E62A2DF2E9009425FD /* KeyBoardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C0E52A2DF2E9009425FD /* KeyBoardHandler.swift */; };
 		BAEE11082A29A1150061AAF6 /* EventsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11072A29A1150061AAF6 /* EventsApp.swift */; };
 		BAEE110A2A29A1150061AAF6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE11092A29A1150061AAF6 /* MainView.swift */; };
 		BAEE110C2A29A1170061AAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEE110B2A29A1170061AAF6 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		BA8097F42A2A154700CF7A18 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		BAA6C0DD2A2DE6DD009425FD /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		BAA6C0DF2A2DE972009425FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BAA6C0E32A2DEA84009425FD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BAA6C0E52A2DF2E9009425FD /* KeyBoardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHandler.swift; sourceTree = "<group>"; };
 		BAEE11042A29A1150061AAF6 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEE11072A29A1150061AAF6 /* EventsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsApp.swift; sourceTree = "<group>"; };
 		BAEE11092A29A1150061AAF6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -124,6 +132,7 @@
 				BAEE11312A29AFC20061AAF6 /* RegisterViewViewModel.swift */,
 				BAEE11332A29AFD80061AAF6 /* EventsListViewViewModel.swift */,
 				BAEE11352A29AFE90061AAF6 /* EventRowViewViewModel.swift */,
+				BAA6C0E32A2DEA84009425FD /* WebView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,6 +144,7 @@
 				BAEE11272A29AF780061AAF6 /* LoginView.swift */,
 				BAEE11292A29AF830061AAF6 /* RegisterView.swift */,
 				BAEE112B2A29AF950061AAF6 /* EventsListView.swift */,
+				BAA6C0DF2A2DE972009425FD /* DetailView.swift */,
 				BAEE112D2A29AFA50061AAF6 /* EventRowView.swift */,
 				BAEE113D2A29B0AA0061AAF6 /* HeaderView.swift */,
 				BAEE11422A29B5890061AAF6 /* ReuseableButton.swift */,
@@ -149,6 +159,8 @@
 				BAEE110B2A29A1170061AAF6 /* Assets.xcassets */,
 				BAEE11072A29A1150061AAF6 /* EventsApp.swift */,
 				BAEE113B2A29B0260061AAF6 /* Extencions.swift */,
+				BAA6C0DD2A2DE6DD009425FD /* DateFormatter.swift */,
+				BAA6C0E52A2DF2E9009425FD /* KeyBoardHandler.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -232,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA6C0DE2A2DE6DD009425FD /* DateFormatter.swift in Sources */,
+				BAA6C0E42A2DEA84009425FD /* WebView.swift in Sources */,
 				BAEE110A2A29A1150061AAF6 /* MainView.swift in Sources */,
+				BAA6C0E62A2DF2E9009425FD /* KeyBoardHandler.swift in Sources */,
 				BAEE112E2A29AFA50061AAF6 /* EventRowView.swift in Sources */,
 				BAEE112A2A29AF830061AAF6 /* RegisterView.swift in Sources */,
 				BAEE11302A29AFB70061AAF6 /* LoginViewViewModel.swift in Sources */,
@@ -247,6 +262,7 @@
 				BAEE11382A29B0030061AAF6 /* User.swift in Sources */,
 				BAEE11362A29AFE90061AAF6 /* EventRowViewViewModel.swift in Sources */,
 				BAEE11322A29AFC20061AAF6 /* RegisterViewViewModel.swift in Sources */,
+				BAA6C0E02A2DE972009425FD /* DetailView.swift in Sources */,
 				BA8097F52A2A154700CF7A18 /* TODO.swift in Sources */,
 				BAEE11342A29AFD80061AAF6 /* EventsListViewViewModel.swift in Sources */,
 			);
@@ -392,6 +408,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-EventsApp.Events";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,6 +440,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-EventsApp.Events";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

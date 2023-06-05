@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-            EventsListView(items: [EventItem(id: "ad", name: "Alen", startTime: Date().timeIntervalSince1970, endTime: Date().timeIntervalSince1970)])
+            EventsListView()
         } else {
             LoginView()
         }

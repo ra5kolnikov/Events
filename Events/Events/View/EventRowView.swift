@@ -20,11 +20,11 @@ struct EventRowView: View {
                     .bold()
                     .padding(.bottom)
                 
-                Text("Start: \(Date(timeIntervalSince1970: item.startTime).formatted(date: .abbreviated, time: .shortened))")
+                Text("Start: \(item.start_time)")
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
                 
-                Text("End: \(Date(timeIntervalSince1970: item.startTime).formatted(date: .abbreviated, time: .shortened))")
+                Text("End: \(item.end_time)")
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
             }
@@ -36,9 +36,9 @@ struct EventRowView: View {
 struct EventRowView_Previews: PreviewProvider {
     static var previews: some View {
         EventRowView(item: EventItem(
-            id: "123",
-            name: "Coffee break",
-            startTime: Date().timeIntervalSince1970,
-            endTime: Date().timeIntervalSince1970))
+            id: "1", name: "Coffee break",
+            start_time: "",
+            end_time: "",
+        url: ""))
     }
 }

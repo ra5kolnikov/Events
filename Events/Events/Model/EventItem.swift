@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct EventItem: Codable, Identifiable {
+struct EventItem: Decodable, Identifiable {
     
-    let id: String
+    var id: String?
     let name: String
-    let startTime: TimeInterval
-    let endTime: TimeInterval
+    var start_time: String
+    var end_time: String
+    let url: String
 }
